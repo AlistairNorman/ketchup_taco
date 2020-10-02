@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  http_basic_authenticate_with name: "pip", password: "roxie"
+
   def show
     response = JSON.parse(Faraday.get("https://statsapi.web.nhl.com/api/v1/game/#{params[:id]}/boxscore").body)
 
