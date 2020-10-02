@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'faraday'
+gem "rspec-rails", "~> 4.0.0.beta4"
 
 group :development, :test do
   gem 'pry-rails'
@@ -49,7 +50,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem "rspec-rails", "~> 4.0.0.beta4"
   gem 'rails-controller-testing'
 end
 
